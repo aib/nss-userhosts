@@ -12,4 +12,6 @@ fn main() {
 		.expect("Could not generate nss bindings")
 		.write_to_file(out_dir.join("nss.rs"))
 		.expect("Could not write nss bindings");
+
+	println!("cargo:rustc-cdylib-link-arg=-Wl,-soname,libnss_userhosts.so.2");
 }
