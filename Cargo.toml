@@ -15,4 +15,3 @@ lto = "fat"
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.69.4"
